@@ -1,0 +1,97 @@
+.pillars-of-success {
+  padding: 6rem 0;
+  background: #f8fafc;
+}
+.pillars-of-success .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.pillars-of-success .section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #2d8f5c;
+  margin-bottom: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.pillars-of-success .pillars-grid {
+  display: grid;
+  gap: 5rem;
+}
+.pillars-of-success .pillar-box {
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  gap: 5rem;
+  background: white;
+  border-radius: 20px;
+  padding: 5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  align-items: center;
+}
+.pillars-of-success .pillar-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .pillars-of-success .pillar-box {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 3rem;
+  }
+}
+.pillars-of-success .pillar-image {
+  width: 100%;
+  height: 600px;
+}
+.pillars-of-success .pillar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.pillars-of-success .pillar-image:hover img {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .pillars-of-success .pillar-image {
+    height: 400px;
+  }
+}
+.pillars-of-success .pillar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.pillars-of-success .pillar-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #2d8f5c;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.pillars-of-success .pillar-text {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.7;
+  color: #374151;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .pillars-of-success {
+    padding: 4rem 0;
+  }
+  .pillars-of-success .container {
+    padding: 0 1rem;
+  }
+  .pillars-of-success .section-title {
+    margin-bottom: 3rem;
+  }
+  .pillars-of-success .pillars-grid {
+    gap: 2rem;
+  }
+}

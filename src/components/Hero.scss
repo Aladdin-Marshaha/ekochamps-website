@@ -1,0 +1,73 @@
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+              url('/images/wix-hero-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+
+  &-content {
+    max-width: 800px;
+    padding: 2rem;
+  }
+
+  &-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 700;
+    margin-bottom: 3rem;
+    line-height: 1.2;
+
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+      
+      &:nth-child(1) { color: #4ade80; }
+      &:nth-child(2) { color: #60a5fa; }
+      &:nth-child(3) { color: #fbbf24; }
+    }
+  }
+
+  &-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #2d8f5c, #4ade80);
+    color: white;
+    border: none;
+    padding: 1.25rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(45, 143, 92, 0.3);
+      background: linear-gradient(135deg, #4ade80, #2d8f5c);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    &-content {
+      padding: 1rem;
+    }
+    
+    &-title {
+      margin-bottom: 2rem;
+    }
+    
+    &-button {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+    }
+  }
+}

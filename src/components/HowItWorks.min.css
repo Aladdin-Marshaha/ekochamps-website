@@ -1,0 +1,121 @@
+.how-it-works {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
+}
+.how-it-works .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.how-it-works .section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #2d8f5c;
+  margin-bottom: 4rem;
+  position: relative;
+}
+.how-it-works .section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #2d8f5c, #4ade80);
+  border-radius: 2px;
+}
+.how-it-works .steps-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+@media (max-width: 1024px) {
+  .how-it-works .steps-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+.how-it-works .step-box {
+  background: white;
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border-top: 5px solid #4ade80;
+  position: relative;
+  overflow: hidden;
+}
+.how-it-works .step-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, #4ade80, #22d3ee);
+  border-radius: 50%;
+  transform: translate(40px, -40px);
+  opacity: 0.1;
+}
+.how-it-works .step-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .how-it-works .step-box {
+    padding: 2.5rem 2rem;
+  }
+}
+.how-it-works .step-title {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 700;
+  color: #2d8f5c;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+.how-it-works .step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.how-it-works .step-point {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.how-it-works .step-number {
+  background: linear-gradient(135deg, #2d8f5c, #4ade80);
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.how-it-works .step-text {
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 4rem 0;
+  }
+  .how-it-works .container {
+    padding: 0 1rem;
+  }
+  .how-it-works .section-title {
+    margin-bottom: 3rem;
+  }
+}

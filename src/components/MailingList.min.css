@@ -1,0 +1,111 @@
+.mailing-list {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #064e3b 0%, #065f46 25%, #047857 75%, #10b981 100%);
+  color: white;
+}
+.mailing-list .container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+.mailing-list .section-title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.mailing-list .mailing-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 3rem 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+}
+.mailing-list .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .mailing-list .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+.mailing-list .form-group {
+  position: relative;
+}
+.mailing-list .form-group input {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: #374151;
+  background: white;
+  transition: all 0.3s ease;
+}
+.mailing-list .form-group input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+.mailing-list .form-group input:focus {
+  outline: none;
+  border-color: #2d8f5c;
+  box-shadow: 0 0 0 4px rgba(45, 143, 92, 0.1);
+  transform: translateY(-2px);
+}
+.mailing-list .email-group {
+  margin-bottom: 2.5rem;
+}
+.mailing-list .submit-button {
+  width: 100%;
+  background: linear-gradient(135deg, #2d8f5c, #4ade80);
+  color: white;
+  border: none;
+  padding: 1.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(45, 143, 92, 0.3);
+}
+.mailing-list .submit-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(45, 143, 92, 0.4);
+  background: linear-gradient(135deg, #4ade80, #2d8f5c);
+}
+.mailing-list .submit-button:active {
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .mailing-list {
+    padding: 4rem 0;
+  }
+  .mailing-list .container {
+    padding: 0 1rem;
+  }
+  .mailing-list .section-title {
+    margin-bottom: 2.5rem;
+  }
+  .mailing-list .mailing-form {
+    padding: 2.5rem 2rem;
+  }
+  .mailing-list .form-row {
+    margin-bottom: 1.5rem;
+  }
+  .mailing-list .email-group {
+    margin-bottom: 2rem;
+  }
+  .mailing-list .submit-button {
+    padding: 1.3rem 2.5rem;
+    font-size: 1.1rem;
+  }
+}

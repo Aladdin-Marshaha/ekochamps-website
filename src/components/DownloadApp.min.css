@@ -1,0 +1,126 @@
+.download-app {
+  min-height: 100vh;
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 50%, #a7f3d0 100%);
+}
+.download-app .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.download-app .page-title {
+  text-align: center;
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 700;
+  color: #065f46;
+  margin-bottom: 2rem;
+}
+.download-app .page-title .rocket {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 1.2em;
+  animation: rocket-bounce 2s ease-in-out infinite;
+}
+.download-app .page-subtitle {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.download-app .signup-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+.download-app .signup-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .download-app .signup-form .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+.download-app .signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+.download-app .signup-form .form-group label {
+  display: block;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+.download-app .signup-form .form-group input, .download-app .signup-form .form-group textarea {
+  width: 100%;
+  padding: 0.875rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+.download-app .signup-form .form-group input:focus, .download-app .signup-form .form-group textarea:focus {
+  outline: none;
+  border-color: #065f46;
+  box-shadow: 0 0 0 3px rgba(6, 95, 70, 0.1);
+}
+.download-app .signup-form .form-group input::placeholder, .download-app .signup-form .form-group textarea::placeholder {
+  color: #9ca3af;
+}
+.download-app .signup-form .form-group textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+.download-app .signup-form .submit-button {
+  width: 100%;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  color: #1f2937;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.download-app .signup-form .submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(251, 191, 36, 0.3);
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+.download-app .signup-form .submit-button:active {
+  transform: translateY(0);
+}
+
+@keyframes rocket-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+@media (max-width: 768px) {
+  .download-app {
+    padding: 2rem 0;
+  }
+  .download-app .container {
+    padding: 0 1rem;
+  }
+  .download-app .signup-form {
+    padding: 2rem 1.5rem;
+  }
+}

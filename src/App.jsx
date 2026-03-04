@@ -1,0 +1,48 @@
+import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import CompanyInfo from './components/CompanyInfo'
+import CallToAction from './components/CallToAction'
+import CarbonStats from './components/CarbonStats'
+import PillarsOfSuccess from './components/PillarsOfSuccess'
+import HowItWorks from './components/HowItWorks'
+import Gallery from './components/Gallery'
+import MailingList from './components/MailingList'
+import BeEkoChamps from './components/BeEkoChamps'
+import DownloadApp from './components/DownloadApp'
+import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
+import './App.css'
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <main>
+          <Routes>
+            <Route path="/" element={
+              <>
+                <Hero />
+                <CompanyInfo />
+                <CallToAction />
+                <CarbonStats />
+                <PillarsOfSuccess />
+                <HowItWorks />
+                <Gallery />
+                <MailingList />
+              </>
+            } />
+            <Route path="/be-ekochamps" element={<BeEkoChamps />} />
+            <Route path="/download-app" element={<DownloadApp />} />
+          </Routes>
+        </main>
+        <Footer />
+        <ScrollToTop />
+      </div>
+    </Router>
+  )
+}
+
+export default App
