@@ -49,7 +49,7 @@
   width: 100%;
 }
 .carbon-stats .stat-card.average {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("/images/beach-1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.05)), url("/ekochamps-website/images/beach-1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -63,12 +63,12 @@
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
 }
 .carbon-stats .stat-card.highest {
-  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url("/images/gallery6.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.25)), url("/ekochamps-website/images/gallery6.jpg");
   background-size: cover;
   background-position: center;
 }
 .carbon-stats .stat-card.lowest {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/images/beach-03.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("/ekochamps-website/images/beach-03.jpg");
   background-size: cover;
   background-position: center;
 }

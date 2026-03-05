@@ -1,6 +1,6 @@
 .company-info {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("/images/wix-hero2-scaled.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("/ekochamps-website/images/wix-hero2-scaled.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
