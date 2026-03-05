@@ -13,11 +13,13 @@ import AboutPage from './components/AboutPage'
 import ContactPage from './components/ContactPage'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
+import AutoScrollToTop from './components/AutoScrollToTop'
 import './App.css'
 
 function App() {
   return (
     <Router>
+      <AutoScrollToTop />
       <div className="App">
         <Header />
         <main>

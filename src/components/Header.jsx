@@ -26,9 +26,9 @@ const Header = () => {
         </button>
 
         <ul className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
-          <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-          <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+          <li><Link to="/" onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Home</Link></li>
+          <li><Link to="/about" onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>About</Link></li>
+          <li><Link to="/contact" onClick={() => { setIsMenuOpen(false); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>Contact</Link></li>
         </ul>
       </nav>
     </header>
