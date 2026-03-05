@@ -14,7 +14,7 @@ const Header = () => {
       <nav className="navbar">
         <div className="nav-brand">
           <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-            <img src="./ekochamps-logo.png" alt="EkoChamps Logo" className="logo" />
+            <img src="/ekochamps-website/ekochamps-logo.png" alt="EkoChamps Logo" className="logo" />
             <span className="brand-text">EkoChamps</span>
           </Link>
         </div>

@@ -13,7 +13,7 @@ const Footer = () => {
               className="footer-brand"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
-              <img src="./ekochamps-logo.png" alt="EkoChamps Logo" className="footer-logo" />
+              <img src="/ekochamps-website/ekochamps-logo.png" alt="EkoChamps Logo" className="footer-logo" />
               <h3>EkoChamps</h3>
             </Link>
 

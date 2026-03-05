@@ -8,21 +8,21 @@ const AboutSDGs = () => {
         <div className="sdgs-grid">
           <div className="sdg-item">
             <div className="sdg-image">
-              <img src="./images/SDG-11-150x150.png" alt="Sustainable Cities & Communities" />
+              <img src="/ekochamps-website/images/SDG-11-150x150.png" alt="Sustainable Cities & Communities" />
             </div>
             <h3 className="sdg-title">SUSTAINABLE CITIES & COMMUNITIES</h3>
           </div>
           
           <div className="sdg-item">
             <div className="sdg-image">
-              <img src="./images/eko-icon-3-150x150.png" alt="Responsible Consumption & Production" />
+              <img src="/ekochamps-website/images/eko-icon-3-150x150.png" alt="Responsible Consumption & Production" />
             </div>
             <h3 className="sdg-title">RESPONSIBLE CONSUMPTION & PRODUCTION</h3>
           </div>
           
           <div className="sdg-item">
             <div className="sdg-image">
-              <img src="./images/eko-icon4-150x150.png" alt="Climate Action" />
+              <img src="/ekochamps-website/images/eko-icon4-150x150.png" alt="Climate Action" />
             </div>
             <h3 className="sdg-title">CLIMATE ACTION</h3>
           </div>
