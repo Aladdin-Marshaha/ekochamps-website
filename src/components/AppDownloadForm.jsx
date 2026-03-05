@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './BeEkoChamps.scss';
+import './AppDownloadForm.scss';
 
-const BeEkoChamps = () => {
+const AppDownloadForm = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,15 +24,15 @@ const BeEkoChamps = () => {
   };
 
   return (
-    <div className="be-ekochamps">
+    <div className="download-app">
       <div className="container">
         <h1 className="page-title">
-          Be an EkoChampion Pioneer!
-          <span className="star">🌟</span>
+          Get Ready to Recycle Smarter!
+          <span className="rocket">🚀</span>
         </h1>
         <p className="page-subtitle">
-          Join our beta community and stay tuned for exciting updates. 
-          Sign up and be the first to know how you can make a real impact!
+          Be among the first to experience our revolutionary app! 
+          Leave your details and we'll notify you as soon as it's available.
         </p>
         
         <form className="signup-form" onSubmit={handleSubmit}>
@@ -74,24 +74,50 @@ const BeEkoChamps = () => {
           </div>
           
           <div className="form-group">
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message">Message (Optional)</label>
             <textarea
               id="message"
               name="message"
-              rows="5"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Tell us why you want to be an EkoChampion..."
-            ></textarea>
+              rows="4"
+              placeholder="What features are you most excited about?"
+            />
           </div>
           
-          <button type="submit" className="submit-button">
-            Submit
+          <button type="submit" className="submit-btn">
+            Notify Me! 📲
           </button>
         </form>
+        
+        <div className="app-preview">
+          <h3>Coming Soon Features:</h3>
+          <div className="features-grid">
+            <div className="feature">
+              <span className="icon">📱</span>
+              <h4>Smart Scanning</h4>
+              <p>AI-powered item recognition</p>
+            </div>
+            <div className="feature">
+              <span className="icon">🎯</span>
+              <h4>Personalized Goals</h4>
+              <p>Tailored sustainability targets</p>
+            </div>
+            <div className="feature">
+              <span className="icon">🏆</span>
+              <h4>Gamified Rewards</h4>
+              <p>Earn points and unlock achievements</p>
+            </div>
+            <div className="feature">
+              <span className="icon">🌍</span>
+              <h4>Impact Tracking</h4>
+              <p>See your environmental contribution</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default BeEkoChamps;
+export default AppDownloadForm;

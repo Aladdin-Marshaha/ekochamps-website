@@ -13,7 +13,7 @@ const CallToAction = () => {
           The EU aims to reduce CO2 emissions by 55% by 2030 and achieve climate neutrality by 2050. 
           Together, we can do our bit to help achieve this goal...
         </p>
-        <Link to="/download-app" className="cta-button">
+        <Link to="/contact" className="cta-button">
           Download The App
         </Link>
       </div>

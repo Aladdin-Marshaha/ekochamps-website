@@ -1,0 +1,83 @@
+.about-mission-vision {
+  padding: 8rem 0;
+  background: #ffffff;
+}
+.about-mission-vision .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.about-mission-vision .boxes-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .about-mission-vision .boxes-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+.about-mission-vision .mission-box,
+.about-mission-vision .vision-box {
+  background: #f8f9fa;
+  padding: 4rem 3rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(45, 143, 92, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+.about-mission-vision .mission-box:hover,
+.about-mission-vision .vision-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px rgba(45, 143, 92, 0.2);
+  border-color: #4fb378;
+}
+.about-mission-vision .mission-box .box-title,
+.about-mission-vision .vision-box .box-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2d8f5c;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .about-mission-vision .mission-box .box-title,
+  .about-mission-vision .vision-box .box-title {
+    font-size: 2rem;
+  }
+}
+.about-mission-vision .mission-box .box-text,
+.about-mission-vision .vision-box .box-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .about-mission-vision .mission-box .box-text,
+  .about-mission-vision .vision-box .box-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
+@media (max-width: 768px) {
+  .about-mission-vision .mission-box,
+  .about-mission-vision .vision-box {
+    padding: 3rem 2rem;
+    border-radius: 15px;
+  }
+}
+.about-mission-vision .mission-box {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+}
+.about-mission-vision .vision-box {
+  background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+}
+@media (max-width: 768px) {
+  .about-mission-vision {
+    padding: 4rem 0;
+  }
+}

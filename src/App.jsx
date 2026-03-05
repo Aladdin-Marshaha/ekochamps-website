@@ -9,8 +9,8 @@ import PillarsOfSuccess from './components/PillarsOfSuccess'
 import HowItWorks from './components/HowItWorks'
 import Gallery from './components/Gallery'
 import MailingList from './components/MailingList'
-import BeEkoChamps from './components/BeEkoChamps'
-import DownloadApp from './components/DownloadApp'
+import AboutPage from './components/AboutPage'
+import ContactPage from './components/ContactPage'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
@@ -34,8 +34,8 @@ function App() {
                 <MailingList />
               </>
             } />
-            <Route path="/be-ekochamps" element={<BeEkoChamps />} />
-            <Route path="/download-app" element={<DownloadApp />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </main>
         <Footer />

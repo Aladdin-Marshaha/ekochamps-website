@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './DownloadApp.scss';
+import './EkoChampionForm.scss';
 
-const DownloadApp = () => {
+const EkoChampionForm = () => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,15 +24,15 @@ const DownloadApp = () => {
   };
 
   return (
-    <div className="download-app">
+    <div className="be-ekochamps">
       <div className="container">
         <h1 className="page-title">
-          Get Ready to Recycle Smarter!
-          <span className="rocket">🚀</span>
+          Be an EkoChampion Pioneer!
+          <span className="star">🌟</span>
         </h1>
         <p className="page-subtitle">
-          Follow us for the latest scoop on our upcoming app. 
-          Sign up and be the first to revolutionize your recycling habits!
+          Join our beta community and stay tuned for exciting updates. 
+          Sign up and be the first to know how you can make a real impact!
         </p>
         
         <form className="signup-form" onSubmit={handleSubmit}>
@@ -81,17 +81,27 @@ const DownloadApp = () => {
               rows="5"
               value={formData.message}
               onChange={handleInputChange}
-              placeholder="Tell us about your recycling goals..."
+              placeholder="Tell us why you want to be an EkoChampion..."
             ></textarea>
           </div>
           
           <button type="submit" className="submit-button">
-            Submit
+            Join the Movement! 🌱
           </button>
         </form>
+        
+        <div className="beta-info">
+          <h3>What to Expect:</h3>
+          <ul>
+            <li>🚀 Early access to EkoChamps app</li>
+            <li>🎁 Exclusive rewards and challenges</li>
+            <li>📬 Updates on sustainability initiatives</li>
+            <li>🌍 Impact tracking and community features</li>
+          </ul>
+        </div>
       </div>
     </div>
   );
 };
 
-export default DownloadApp;
+export default EkoChampionForm;

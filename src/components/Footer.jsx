@@ -22,8 +22,8 @@ const Footer = () => {
           <div className="footer-links">
             <ul>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/be-ekochamps">About</Link></li>
-              <li><Link to="/download-app">Contact</Link></li>
+              <li><Link to="/about">About</Link></li>
+              <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
           <div className="social-links">

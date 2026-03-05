@@ -1,0 +1,80 @@
+.about-mission-vision {
+  padding: 8rem 0;
+  background: #ffffff;
+
+  .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .boxes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: stretch;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+
+  .mission-box,
+  .vision-box {
+    background: #f8f9fa;
+    padding: 4rem 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(45, 143, 92, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+
+    &:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 60px rgba(45, 143, 92, 0.2);
+      border-color: #4fb378;
+    }
+
+    .box-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #2d8f5c;
+      margin-bottom: 2rem;
+      text-align: center;
+
+      @media (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+
+    .box-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #555;
+      text-align: center;
+      margin: 0;
+
+      @media (max-width: 768px) {
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+    }
+
+    @media (max-width: 768px) {
+      padding: 3rem 2rem;
+      border-radius: 15px;
+    }
+  }
+
+  .mission-box {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8f5e8 100%);
+  }
+
+  .vision-box {
+    background: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 100%);
+  }
+
+  @media (max-width: 768px) {
+    padding: 4rem 0;
+  }
+}

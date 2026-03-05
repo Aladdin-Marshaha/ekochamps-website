@@ -1,0 +1,157 @@
+.download-app {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 50%, #f0f4f8 100%);
+  display: flex;
+  align-items: center;
+}
+.download-app .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.download-app .page-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: #2d8f5c;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.download-app .page-title .rocket {
+  margin-left: 0.5rem;
+  animation: bounce 2s infinite;
+}
+.download-app .page-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.download-app .signup-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+.download-app .signup-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .download-app .signup-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+.download-app .signup-form .form-group {
+  margin-bottom: 2rem;
+}
+.download-app .signup-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+.download-app .signup-form .form-group input,
+.download-app .signup-form .form-group textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.download-app .signup-form .form-group input:focus,
+.download-app .signup-form .form-group textarea:focus {
+  outline: none;
+  border-color: #2d8f5c;
+  box-shadow: 0 0 0 3px rgba(45, 143, 92, 0.1);
+}
+.download-app .signup-form .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.download-app .signup-form .submit-btn {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #2d8f5c, #4ade80);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.download-app .signup-form .submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(45, 143, 92, 0.3);
+}
+.download-app .app-preview {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.download-app .app-preview h3 {
+  font-size: 1.8rem;
+  color: #2d8f5c;
+  margin-bottom: 2rem;
+}
+.download-app .app-preview .features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+.download-app .app-preview .features-grid .feature {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: #f8fafc;
+  transition: transform 0.3s ease;
+}
+.download-app .app-preview .features-grid .feature:hover {
+  transform: translateY(-5px);
+}
+.download-app .app-preview .features-grid .feature .icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.download-app .app-preview .features-grid .feature h4 {
+  color: #2d8f5c;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+.download-app .app-preview .features-grid .feature p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+@media (max-width: 768px) {
+  .download-app {
+    padding: 4rem 1.5rem;
+  }
+  .download-app .signup-form,
+  .download-app .app-preview {
+    padding: 2rem;
+  }
+}

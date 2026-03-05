@@ -1,0 +1,140 @@
+.be-ekochamps {
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f7fa 50%, #f0f4f8 100%);
+  display: flex;
+  align-items: center;
+}
+.be-ekochamps .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+.be-ekochamps .page-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 800;
+  color: #2d8f5c;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+}
+.be-ekochamps .page-title .star {
+  margin-left: 0.5rem;
+  animation: twinkle 2s ease-in-out infinite alternate;
+}
+.be-ekochamps .page-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+.be-ekochamps .signup-form {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+.be-ekochamps .signup-form .form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .be-ekochamps .signup-form .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+.be-ekochamps .signup-form .form-group {
+  margin-bottom: 2rem;
+}
+.be-ekochamps .signup-form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #374151;
+}
+.be-ekochamps .signup-form .form-group input,
+.be-ekochamps .signup-form .form-group textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+.be-ekochamps .signup-form .form-group input:focus,
+.be-ekochamps .signup-form .form-group textarea:focus {
+  outline: none;
+  border-color: #2d8f5c;
+  box-shadow: 0 0 0 3px rgba(45, 143, 92, 0.1);
+}
+.be-ekochamps .signup-form .form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+.be-ekochamps .signup-form .submit-button {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  background: linear-gradient(135deg, #2d8f5c, #4ade80);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.be-ekochamps .signup-form .submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(45, 143, 92, 0.3);
+}
+.be-ekochamps .beta-info {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+.be-ekochamps .beta-info h3 {
+  font-size: 1.8rem;
+  color: #2d8f5c;
+  margin-bottom: 1.5rem;
+}
+.be-ekochamps .beta-info ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+.be-ekochamps .beta-info ul li {
+  padding: 0.75rem 0;
+  font-size: 1.1rem;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+.be-ekochamps .beta-info ul li:last-child {
+  border-bottom: none;
+}
+@keyframes twinkle {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+@media (max-width: 768px) {
+  .be-ekochamps {
+    padding: 4rem 1.5rem;
+  }
+  .be-ekochamps .signup-form,
+  .be-ekochamps .beta-info {
+    padding: 2rem;
+  }
+}
